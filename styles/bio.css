@@ -26,6 +26,10 @@ header {
     gap: 1rem;
   }
 }
+header .header__logo {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 header .header__title {
   font-size: 24px;
   line-height: 32px;
