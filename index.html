@@ -10,10 +10,10 @@
     <header>
         <!--used h1 for logo as the logo given doesn't seem to match the mock ups>--> 
         <h1 class="header__title">
-            <a class="header__logo" href=.index.html>BANDSITE</a>
+            <a class="header__logo" href=index.html>BANDSITE</a>
         </h1>
             <div class="header__subtitle-one">
-                <a class="header__link" href=".index.html">Biography</a>
+                <a class="header__link" href="index.html">Biography</a>
             </div>
             <div class="header__subtitle-two">
                 <a class="header__link" href="./pages/shows.html">Shows</a>
@@ -90,6 +90,25 @@
             </div>
         </article>
     </section>
+    <section class="forms">
+        <div class="forms__header">Join the Conversation</div>
+        <form class="comments">
+            <div class="comments__left">
+                <img class="comments__image" src="./assets/images/Mohan-muruge.jpg">
+                <!-- wanted to try and imcorporate file type for images
+                    <input id="comments__file" type="file"> 
+                -->
+            </div>
+            <div class="comments__right">
+                <label for="Name">NAME</label>
+                <input id="comments__name" type="text" name="Name" placeholder="Enter your name">
+                <label for="Comment">COMMENT</label>
+                <input id="comments__comment" type="text" name="Comment" placeholder="Add a new comment">
+                <input id="comments__date" type="hidden" name="Date">
+                <button id="comments__button" type="submit">COMMENT</button>
+            </div>
+        </form>
+    </section>
     <footer>
         <section class="footer__block">
         <h5 class="footer__title">Get in Touch</h5>
@@ -140,5 +159,6 @@
         </div>
         <div class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</div>
     </footer>
+    <script src="./scripts/index-page.js"></script>
 </body>
 </html>

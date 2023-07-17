@@ -69,7 +69,7 @@ header .header__subtitle-one:hover, header .header__subtitle-two:hover {
     width: auto;
   }
 }
-header .header__subtitle-one {
+header .header__subtitle-two {
   font-weight: 600;
   border-bottom: solid #FFFFFF 0.3rem;
 }

@@ -288,6 +288,96 @@ header{
         } 
 }
 
+.forms{
+    &__header{
+        font-size:24px;
+        line-height:32px;
+        font-weight:700;
+        padding: 1rem 1rem;
+    }
+}
+
+.comments{
+    display:flex;
+    padding:0 1rem 1rem 1rem;
+    justify-content:space-between;
+
+    &__left{
+        padding-top:1rem;
+        width:20%;
+    }
+
+    &__image{
+        border-radius:50%;
+        height:36px;
+        width:36px;
+    }
+
+    &__right{
+        width:80%;
+    }
+}
+
+/*was supposed to be used for file type
+#comments__file{
+    display:none;
+}*/
+
+
+#comments__name{
+    width:100%;
+    padding:0.5rem 0;
+    border:1px solid colors.$Mercury;
+    border-radius:4px;
+    outline:none;
+
+    &:focus{
+        border:1px solid colors.$BandSite-Black
+    }
+}
+
+#comments__comment{
+    width:100%;
+    padding:0.5rem 0 5rem;
+    border:1px solid colors.$Mercury;
+    border-radius:4px;
+    outline:none;
+
+    &:focus{
+        border:1px solid colors.$BandSite-Black;
+    }
+}
+
+#comments__button{
+    width:100%;
+    height:40px;
+    padding:0.5rem 0;
+    margin:0.5rem 0;
+    background-color:colors.$BandSite-Black;
+    border:none;
+    border-radius:4px;
+    color:colors.$White;
+    font-size:13px;
+    line-height:20px;
+    font-weight:700;
+}
+
+label{
+    font-size:10px;
+    line-height:20px;
+    font-weight:700;
+    color:colors.$Silver;
+}
+
+.posts{
+    display:flex;
+
+    &__image{
+        height:36px;
+        width:36px;
+        border-radius:50%;
+    }
+}
 
 footer{
     background-color:colors.$BandSite-Black;
