@@ -289,22 +289,48 @@ header{
 }
 
 .forms{
+
     &__header{
         font-size:24px;
         line-height:32px;
         font-weight:700;
-        padding: 1rem 1rem;
+        padding: 1rem 0 0 1rem;
+
+        @include tablet{
+            font-size:36px;
+            line-height:44px;
+            padding:2rem 0 0 2rem;
+        }
+
+        @include desktop{
+            padding:2rem 0 0 6rem;
+        }
+
     }
 }
 
 .comments{
     display:flex;
-    padding:0 1rem 1rem 1rem;
+    margin:0 1rem 0.5rem;
     justify-content:space-between;
+    border-bottom: 1px solid colors.$Mercury;
+
+    @include tablet{
+        margin:0 5rem;
+    }
+
+    @include desktop{
+        margin:0 25rem;
+    }
 
     &__left{
         padding-top:1rem;
         width:20%;
+
+        @include tablet{
+            padding-top:3rem;
+            width:10%;
+        }
     }
 
     &__image{
@@ -315,6 +341,11 @@ header{
 
     &__right{
         width:80%;
+
+        @include tablet{
+            padding-top:2rem;
+            width:90%;
+        }
     }
 }
 
@@ -330,9 +361,14 @@ header{
     border:1px solid colors.$Mercury;
     border-radius:4px;
     outline:none;
+    background-color:colors.$Alabaster;
 
     &:focus{
         border:1px solid colors.$BandSite-Black
+    }
+
+    @include tablet{
+        margin-bottom:1rem;
     }
 }
 
@@ -342,6 +378,7 @@ header{
     border:1px solid colors.$Mercury;
     border-radius:4px;
     outline:none;
+    background-color:colors.$Alabaster;
 
     &:focus{
         border:1px solid colors.$BandSite-Black;
@@ -356,32 +393,121 @@ header{
     background-color:colors.$BandSite-Black;
     border:none;
     border-radius:4px;
+    font-family:"Avenir Next",sans-serif;
     color:colors.$White;
     font-size:13px;
     line-height:20px;
-    font-weight:700;
+    font-weight:600;
+
+    &:hover{
+        background-color:colors.$BandSite-DarkBlack;
+        cursor:pointer;
+    }
+
+    @include tablet{
+        width:150px;
+        padding:0 32px;
+        float:right;
+        margin:1.5rem 0;
+        font-size:14px;
+        line-height:22px;
+    }
 }
 
 label{
     font-size:10px;
     line-height:20px;
-    font-weight:700;
     color:colors.$Silver;
+
+    @include tablet{
+        font-size:12px;
+        line-height:20px;
+    }
 }
 
 .posts{
     display:flex;
+    flex-wrap:wrap;
+
+    &__left{
+        padding-top:1rem;
+    }
 
     &__image{
         height:36px;
         width:36px;
         border-radius:50%;
+
+        @include tablet{
+            height:48px;
+            width:48px;
+        }
+    }
+
+    &__section{
+        display:flex;
+        border-bottom:solid 1px colors.$Mercury;
+        width:100%;
+        margin:0 1rem;
+
+        @include tablet{
+            margin:0 5rem;
+        }
+
+        @include desktop{
+            margin:0 25rem;
+        }
+    }
+
+    &__right{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        padding:1rem 0 1rem 1rem;
+        color:colors.$BandSite-Black;
+    }
+
+    &__name{
+        font-size:13px;
+        line-height:18px;
+        font-weight:600;
+
+        @include tablet{
+            font-size:14px;
+            line-height:22px;
+        }
+    }
+
+    &__date{
+        font-size:13px;
+        line-height:18px;
+        color:colors.$Silver;
+
+        @include tablet{
+            font-size:14px;
+            line-height:22px;
+        }
+    }
+
+    &__comment{
+        font-size:13px;
+        line-height:18px;
+        padding-top:0.5rem;
+        width:100%;
+
+        @include tablet{
+            font-size:14px;
+            line-height:22px;
+        }
     }
 }
 
 footer{
     background-color:colors.$BandSite-Black;
     color:colors.$White;
+    margin-top:1rem;
     @include tablet{
         position:relative;
     }
